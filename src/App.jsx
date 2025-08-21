@@ -77,7 +77,7 @@ function App() {
         </div>
 
           <div>
-          <input type="text" className='shadow-md rounded-2xl h-[57px] w-[248px] pl-6 text-2xl'  placeholder='Qidirish...'  maxLength={22} value={qidirish} onChange={(e) => setQidirish(e.target.value)}
+          <input type="text" className='shadow-md rounded-2xl h-[57px] w-[248px] pl-6 text-2xl'  placeholder='Qidirish...'  maxLength={16} value={qidirish} onChange={(e) => setQidirish(e.target.value)}
 />
 
           </div>
