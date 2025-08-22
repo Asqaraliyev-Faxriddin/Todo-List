@@ -50,6 +50,10 @@ function App() {
     setVazifalar(vazifalar.map(v => v.id === id ? {...v, title} : v));
     setEditingId(null);
   }
+
+  function hammasiniochirish(){
+    setVazifalar([])
+  }
   
 
   function handleClick() {
@@ -134,11 +138,11 @@ function App() {
             O'chirish
           </button>
         </div>
+
+
+
       </div>
 ))}
-
-
-
 
 
 
@@ -146,7 +150,20 @@ function App() {
 </div>
 
 
+  <div>
+
+  </div>
+
          
+
+         
+<div className="gap-5 flex mb-12 relative top-10 ">
+          {["Bajarilganlarni tozalash", "Hammasini o'chirish"].map((btn) => (
+        <button key={btn} onClick={() => setActiveButton(btn)} className={`shadow-md w-[194px] h-[54px] rounded-2xl font-bold ${activeButton === btn ? "bg-black text-white": "bg-white text-black"}`}>
+          {btn}
+        </button>
+      ))}
+    </div>
 
 
             
